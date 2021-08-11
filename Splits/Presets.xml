@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE Presets [
+  <!ENTITY T "Tracker_">
+]>
+<Presets>
+  <Preset name="Default">
+    <Split name="&T;episode_2"/>
+    <Split name="&T;episode_3"/>
+    <Split name="&T;episode_4"/>
+    <Split name="&T;episode_5"/>
+    <Split name="&T;episode_6"/>
+    <Split name="&T;episode_7"/>
+    <Split name="&T;episode_8"/>
+    <Split name="&T;tCredits_1"/>
+  </Preset>
+</Presets>

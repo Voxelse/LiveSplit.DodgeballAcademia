@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE Splits [
+  <!ENTITY T "Tracker_">
+]>
+<Splits>
+  <Empty name="Episodes" text=" - - Episodes - - "/>
+  <Split name="&T;episode_2" text="Episode 1 Done"/>
+  <Split name="&T;episode_3" text="Episode 2 Done"/>
+  <Split name="&T;episode_4" text="Episode 3 Done"/>
+  <Split name="&T;episode_5" text="Episode 4 Done"/>
+  <Split name="&T;episode_6" text="Episode 5 Done"/>
+  <Split name="&T;episode_7" text="Episode 6 Done"/>
+  <Split name="&T;episode_8" text="Episode 7 Done"/>
+  <Split name="&T;tCredits_1" text="Episode 8 Done"/>
+
+  <Empty name="MainQuests" text=" - - Main Quests - - "/>
+  <Parent name="epi1" text="Episode 1 - Let the Games Begin!">
+    <Split name="&T;quest_epi1_task_attendCeremony_2" text="Attend the ceremony at the Central Plaza!"/>
+    <Split name="&T;quest_epi1_task_goToClassroom_2" text="Meet the professors at the Main Building!"/>
+    <Split name="&T;quest_epi1_task_followBexigo_2" text="Talk to Balloony outside!"/>
+    <Split name="&T;quest_epi1_task_talkToKyabo_2" text="Meet up with Naya and Kyabo near the Library!"/>
+    <Split name="&T;quest_epi1_task_goToLibrary_2" text="Check out the Library!"/>
+    <Split name="&T;quest_epi1_task_talkToMina_2" text="Meet up with your next prospect at one of the Central Plaza courts!"/>
+    <Split name="&T;quest_epi1_task_returnToClassroom_2" text="Report your progress to the professors at the Main Building!"/>
+    <Split name="&T;quest_epi1_task_goToDorms_2" text="Check out the Dorm!"/>
+  </Parent>
+  <Parent name="epi2" text="Episode 2 - The Tournament's On!">
+    <Split name="&T;quest_epi2_task_task1_2" text="Attend Fortunato's class!"/>
+    <Split name="&T;quest_epi2_task_task2_2" text="Go to the Dome for the Tournament briefing!"/>
+    <Split name="&T;quest_epi2_task_task3_2" text="Search for a Badge in the Cafeteria!"/>
+    <Split name="&T;quest_epi2_task_task4_2" text="Ask the School Monitor about a Badge at the gate to the Forest!"/>
+    <Split name="&T;quest_epi2_task_task4a_fountainBattle_2" text="Help the School Monitor deal with a troublesome student at the Garden!"/>
+    <Split name="&T;quest_epi2_task_task4b_returnToMonitora_2" text="Get back to the School Monitor!"/>
+    <Split name="&T;quest_epi2_task_task5_2" text="Search for a Badge in the Infirmary!"/>
+    <Split name="&T;quest_epi2_task_task6_2" text="Return to the Cafeteria to get another Badge!"/>
+    <Split name="&T;quest_epi2_task_task7_2" text="Search for a Badge in the Library!"/>
+    <Split name="&T;quest_epi2_task_task8_2" text="Return to the Dome with your Badges"/>
+    <Split name="&T;quest_epi2_task_task9_2" text="Attend your Tournament match!"/>
+  </Parent>
+  <Parent name="epi3" text="Episode 3 - A.I. Mayhem">
+    <Split name="&T;quest_epi3_task_katClassroom_2" text="Go to Kat's classroom for today's lesson!"/>
+    <Split name="&T;quest_epi3_task_centralPlaza_2" text="Go after the Droidgebots at the Central Plaza!"/>
+    <Split name="&T;quest_epi3_task_task3_2" text="Go to the Forest!"/>
+    <Split name="&T;quest_epi3_task_task4_2" text="Get written permission from the Principal!"/>
+    <Split name="&T;quest_epi3_task_task5_2" text="Deliver the note with written permission to the School Monitor!"/>
+    <Split name="&T;quest_epi3_task_task6_2" text="Go to the Forest!"/>
+    <Split name="&T;quest_epi3_task_task7_2" text="Find the Lab within the Forest!"/>
+    <Split name="&T;quest_epi3_task_task8_2" text="Retrieve the password from Chester!"/>
+    <Split name="&T;quest_epi3_task_task9_2" text="Return to the Lab with the password!"/>
+    <Split name="&T;quest_epi3_task_task9b_2" text="Battle it out outside the Lab!"/>
+    <Split name="&T;quest_epi3_task_task10_2" text="At last, get the remote control from the Lab!"/>
+    <Split name="&T;quest_epi3_task_task11_2" text="Activate the remote control at the Central Plaza!"/>
+    <Split name="&T;quest_epi3_task_task12_2" text="Locate Droidgebot Zero in the Forest!"/>
+    <Split name="&T;quest_epi3_task_task13_2" text="Locate Droidgebot Zero in the Deep Woods!"/>
+    <Split name="&T;quest_epi3_task_task14_2" text="Check if the chaos has subdued around the school!"/>
+  </Parent>
+  <Parent name="epi4" text="Episode 4 - Trouble Letter">
+    <Split name="&T;quest_epi4_task_goToRooftop_2" text="Meet your secret admirer on the Rooftop of the school!"/>
+    <Split name="&T;quest_epi4_task_goToClass_2" text="Attend professor Ma'kako's class!"/>
+    <Split name="&T;quest_epi4_task_goToRooftop2_2" text="Try to meet your secret admirer again on the Rooftop of the school!"/>
+    <Split name="&T;quest_epi4_task_goToScienceLab_2" text="Bring the letter to the Lab for a thorough analysis!"/>
+    <Split name="&T;quest_epi4_task_talkToCafeteriaLady_2" text="Talk to the Lunch Lay!"/>
+    <Split name="&T;quest_epi4_task_deepForestBattle_2" text="Look for Boris in the Deep Woods!"/>
+    <Split name="&T;quest_epi4_task_talkToPrincipal_2" text="Talk to Boris at the Principal's Office!"/>
+    <Split name="&T;quest_epi4_task_domeTournamentBattle_2" text="Attend your Tournament match!"/>
+  </Parent>
+  <Parent name="epi5" text="Episode 5 - Where's our Baby?">
+    <Split name="&T;quest_epi5_task_goToFortunatosClass_2" text="Don't be late for professor Fortunato's class!"/>
+    <Split name="&T;quest_epi5_task_goToCantina_2" text="Go to the Cafeteria for some quality family time!"/>
+    <Split name="&T;quest_epi5_task_grabBabyBall_2" text="Where did the Baby Ball go?!"/>
+    <Split name="&T;quest_epi5_task_explainSituationToFortunato_2" text="Search for George in Fortunato's Classroom!"/>
+    <Split name="&T;quest_epi5_task_goToLab_2" text="Get your Sand Sample analyzed at the Lab!"/>
+    <Split name="&T;quest_epi5_task_talkToMakako_2" text="Pester professor Ma'kako about the keys to the Parking Lot gate!"/>
+    <Split name="&T;quest_epi5_task_exploreParkingLot_2" text="Explore the Parking Lot!"/>
+    <Split name="&T;quest_epi5_task_findTheCar_2" text="Find the entrance to the suspicious place!"/>
+    <Split name="&T;quest_epi5_task_talkToTony_2" text="Explore Big Tony's Den!"/>
+    <Split name="&T;quest_epi5_task_goToTheDenCourt_2" text="Go to the suspicious court!"/>
+    <Split name="&T;quest_epi5_task_talkToTonyAgain_2" text="Talk to Big Tony!"/>
+    <Split name="&T;quest_epi5_task_leaveTheDen_2" text="Leave Big Tony's Den!"/>
+    <Split name="&T;quest_epi5_task_interrogateSquid_2" text="Interrogate Squid!"/>
+    <Split name="&T;quest_epi5_task_goToSquidsHideout_2" text="Track down Squid!"/>
+    <Split name="&T;quest_epi5_task_returnBallsToFortunato_2" text="Return to professor Fortunato's class!"/>
+    <Split name="&T;quest_epi5_task_lookForMenino_2" text="Look around for Nino!"/>
+    <Split name="&T;quest_epi5_task_goToTheLibrary_2" text="Look for Nino at the Library!"/>
+    <Split name="&T;quest_epi5_task_goToCantina_lookForMenino_2" text="Look for Nino at the Cafeteria!"/>
+    <Split name="&T;quest_epi5_task_completeFortunatoTask_2" text="Turn in your assignment to professor Fortunato!"/>
+  </Parent>
+  <Parent name="epi6" text="Episode 6 - Ghostly Secrets">
+    <Split name="&T;quest_epi6_task_goToClassFake_2" text="Go to today's class!"/>
+    <Split name="&T;quest_epi6_task_goToCafeteria_2" text="Inquire about the letter at the Cafeteria!"/>
+    <Split name="&T;quest_epi6_task_meetLunaAtForest_2" text="Meet up with the secret sender at the Tombstone in the Forest!"/>
+    <Split name="&T;quest_epi6_task_goToFortunatoClassroom_2" text="Ask professor Fortunato about the ghostly technique!"/>
+    <Split name="&T;quest_epi6_task_goToLibrary_2" text="Search the Library for information on the ghostly technique!"/>
+    <Split name="&T;quest_epi6_task_goToLibraryBasement_2" text="Search the Library's basement section for information on the ghostly technique!"/>
+    <Split name="&T;quest_epi6_task_kyaboAtLibraryBasement_2" text="What is Kyabo up to...?"/>
+    <Split name="&T;quest_epi6_task_kyaboOutsideLibrary_2" text="Search around the school for information on the ghostly technique!"/>
+    <Split name="&T;quest_epi6_task_searchForest_2" text="Search around the Deep Woods for the Specters of the Forest!"/>
+    <Split name="&T;quest_epi6_task_searchRooftop_2" text="Search around the school's Rooftop for the Phantom Pusher!"/>
+    <Split name="&T;quest_epi6_task_searchCafeteria_2" text="Fire up your neurons with a snack at the Cafeteria!"/>
+    <Split name="&T;quest_epi6_task_searchSchool_2" text="Rethink your strategy at the Central Plaza!"/>
+    <Split name="&T;quest_epi6_task_searchTombstone_2" text="Investigate the secret of the Tombstone in the Forest!"/>
+    <Split name="&T;quest_epi6_task_tournamentMatch_2" text="Attend your Tournament match!"/>
+  </Parent>
+  <Parent name="epi7" text="Episode 7 - The Fellowship of the Square">
+    <Split name="&T;quest_epi7_task_goToPractice_2" text="Begin your practice at the Court near the Infirmary!"/>
+    <Split name="&T;quest_epi7_task_goToCableCar_2" text="Find a way to reach Mount Dodji!"/>
+    <Split name="&T;quest_epi7_task_findTheRadioTower_2" text="Locate the Radio Tower!"/>
+    <Split name="&T;quest_epi7_task_reachTheRadioTower_2" text="Make your way up to the Radio Tower!"/>
+    <Split name="&T;quest_epi7_task_goToTheLibrary_2" text="Make haste to the Library!"/>
+    <Split name="&T;quest_epi7_task_sneakyIntoTheDownstairsRoom_2" text="Sneak into the Squareballer meeting at the Library's basement!"/>
+    <Split name="&T;quest_epi7_task_goToThePrincipalsOffice_2" text="Go see the Principal in his Office!"/>
+    <Split name="&T;quest_epi7_task_goToTheForest_2" text="Explore the Forest and look for Boris's whereabouts!"/>
+    <Split name="&T;quest_epi7_task_goThroughTheGate_2" text="Investigate the Deep Woods!"/>
+    <Split name="&T;quest_epi7_task_enterBorisHome_2" text="Find your way to Boris's House!"/>
+  </Parent>
+  <Parent name="epi8" text="Episode 8 - The Grand Finale">
+    <Split name="&T;quest_epi8_task_goToTheDome_2" text="Head to the final Tournament match at the Dome!"/>
+    <Split name="&T;quest_epi8_task_defeatTheRobots_2" text="Defeat the Mascots holding your team captive!"/>
+    <Split name="&T;quest_epi8_task_returnToDome_2" text="Search for Nino at the Dome!"/>
+    <Split name="&T;quest_epi8_task_goToBorisHouse_2" text="Check up on Boris at his house in the Forest!"/>
+    <Split name="&T;quest_epi8_task_goToBlockedSchool_2" text="Look for the professors at the school's Main Building!"/>
+    <Split name="&T;quest_epi8_task_goToInfirmary_2" text="Check out the Infirmary!"/>
+    <Split name="&T;quest_epi8_task_findThePrincipal_2" text="Locate the Principal inside the school's Main Building!"/>
+    <Split name="&T;quest_epi8_task_retrieveTheKeys_2" text="Retrieve the keys to get into the Principal's office!"/>
+    <Split name="&T;quest_epi8_task_findThePrincipal2_2" text="Check what's going on inside the Principal's Office!"/>
+    <Split name="&T;quest_epi8_task_goToCableCar_2" text="Get to the Cable Car and try to manually operate it!"/>
+    <Split name="&T;quest_epi8_task_goToRadioTower_2" text="Go to the Radio Tower and insert the thumb drive into the Mixing Board!"/>
+    <Split name="&T;quest_epi8_task_defeatMenino_2" text="Defeat Nino!"/>
+  </Parent>
+
+
+  <Empty name="SideQuests" text=" - - Side Quests - - "/>
+  <!--1-->
+  <Parent name="sqSimpleExperiment" text="A Simple Experiment">
+    <Split name="&T;quest_sqSimpleExperiment_task_battleKyabo_2" text="Challenge the unsuspecting person!"/>
+    <Split name="&T;quest_sqSimpleExperiment_task_returnToGirl_2" text="Return to the scientist girl!"/>
+  </Parent>
+  <!--2-->
+  <Parent name="sqLostWallet" text="An Unexpected Crisis">
+    <Split name="&T;quest_sqLostWallet_task_talkToBonito_2" text="Borrow the Grabber Rod from George!"/>
+    <Split name="&T;quest_sqLostWallet_task_returnToQuestGiver_2" text="Take the Grabber Rod to the boy who lost his wallet!"/>
+  </Parent>
+  <Parent name="sqShop" text="An Impulse Purchase">
+    <Split name="&T;quest_sqShop_task_goToCabelo_2" text="Buy any type of gear at the Dodge Shop!"/>
+    <Split name="&T;quest_sqShop_task_returnToQuestGiver_2" text="Take the gear you bought back to that busy student!"/>
+  </Parent>
+  <!--3-->
+  <Parent name="sqLostGlasses" text="Find the Glasses!">
+    <Split name="&T;quest_sqLostGlasses_task_task1_searchClues_2" text="Search for clues around the school!"/>
+    <Split name="&T;quest_sqLostGlasses_task_task2_cafeteria_2" text="Interrogate the Lunch Lay!"/>
+    <Split name="&T;quest_sqLostGlasses_task_task3_returnGlasses_2" text="Return the glasses to that girl!"/>
+  </Parent>
+  <Parent name="sqFountainBattles" text="Nature's Desire">
+    <Split name="&T;quest_sqFountainBattles_task_task1_battleTramway_2" text="Find the litterer near the Cable Car!"/>
+    <Split name="&T;quest_sqFountainBattles_task_task2_battleDome_2" text="Find the litterer near the Infirmary!"/>
+    <Split name="&T;quest_sqFountainBattles_task_task3_battleForest_2" text="Find the litterer inside the Forest!"/>
+    <Split name="&T;quest_sqFountainBattles_task_task4_returnLake_2" text="Report back to the guy who can interpret the water's desire!"/>
+  </Parent>
+  <!--4-->
+  <Parent name="sqElementalBalls" text="Keep your Trade Secrets">
+    <Split name="&T;quest_sqElementalBalls_task_investigateFire_2" text="Search around the Forest for the first set of leaked prototype dodgeballs!"/>
+    <Split name="&T;quest_sqElementalBalls_task_investigateIce_2" text="Search around the Forest for the second set of leaked prototype dodgeballs!"/>
+    <Split name="&T;quest_sqElementalBalls_task_investigateShock_2" text="Search around the Forest for the third set of leaked prototype dodgeballs!"/>
+    <Split name="&T;quest_sqElementalBalls_task_reportFindings_2" text="Take the prototype dodgeballs back to Noemi!"/>
+  </Parent>
+  <!--6-->
+  <Parent name="sqTony" text="Underground Tournament">
+    <Split name="&T;quest_sqTony_task_completeTournament_2" text="Complete the Underground Tournament at Big Tony's Den!"/>
+  </Parent>
+  <Parent name="sqBathroom" text="A Weird Place for a Game">
+    <Split name="&T;quest_sqBathroom_task_check_2" text="Check what's happening in the school's Bathroom!"/>
+    <Split name="&T;quest_sqBathroom_task_defeat_2" text="Beat the game designer at his own game!"/>
+  </Parent>
+  <!--7-->
+  <Parent name="sqRetriever" text="Retrieve the Books!">
+    <Split name="&T;quest_sqRetriever_task_forest_2" text="Retrieve a book from the person in the Forest!"/>
+    <Split name="&T;quest_sqRetriever_task_parkinglot_2" text="Retrieve a book from the person at the Parking Lot!"/>
+    <Split name="&T;quest_sqRetriever_task_mountain_2" text="Retrieve several books from the person at Mount Dodji!"/>
+    <Split name="&T;quest_sqRetriever_task_return_2" text="Return the books to the guy at the Dorm's Basement!"/>
+  </Parent>
+  <!--8-->
+  <Parent name="sqDailyChallenger" text="The Daily Challenge">
+    <Split name="&T;quest_sqDailyChallenger_task_defeat_2" text="Defeat the challenger every day!"/>
+  </Parent>
+</Splits>
