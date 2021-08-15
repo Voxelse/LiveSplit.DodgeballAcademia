@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <updates>
+  <update version="1.0.1">
+    <files>
+      <file path="Components/LiveSplit.DodgeballAcademia.dll" status="changed"/>
+    </files>
+    <changelog>
+      <change>Changed episode splits to split on episode transitions ("The Next Day"/"The End")</change>
+    </changelog>
+  </update>
   <update version="1.0.0">
     <files>
       <file path="Components/LiveSplit.DodgeballAcademia.dll" status="added"/>

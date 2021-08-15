@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
 namespace LiveSplit.DodgeballAcademia {
     public partial class DodgeballAcademiaComponent {
@@ -19,14 +20,30 @@ namespace LiveSplit.DodgeballAcademia {
         }
 
         public override bool Split() {
-            return remainingSplits.Count() != 0 && (SplitTracker());
+            const string T = "Tracker", TT = "TransitionText";
 
+            return remainingSplits.Count() != 0 && (SplitTransitionText() || SplitTracker());
+
+            bool SplitTransitionText() {
+                if(!remainingSplits.ContainsKey(TT)
+                || !memory.TransitionText.Changed || String.IsNullOrEmpty(memory.TransitionText.New)) {
+                    return false;
+                }
+                switch(memory.TransitionText.New) {
+                    case "ui_thenextday":
+                    case "ui_theend":
+                        return remainingSplits.Split(TT, memory.GetEpisode());
+                    default:
+                        return false;
+                }
+            }
+            
             bool SplitTracker() {
-                if(!remainingSplits.ContainsKey("Tracker")) {
+                if(!remainingSplits.ContainsKey(T)) {
                     return false;
                 }
                 foreach(string name in memory.NewTrackerSequence()) {
-                    if(remainingSplits.Split("Tracker", name)) {
+                    if(remainingSplits.Split(T, name)) {
                         return true;
                     }
                 }

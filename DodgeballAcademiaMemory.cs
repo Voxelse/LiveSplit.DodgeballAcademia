@@ -12,13 +12,14 @@ namespace LiveSplit.DodgeballAcademia {
     public class DodgeballAcademiaMemory : Memory {
 
         protected override string[] ProcessNames => new string[] { "DodgeballAcademia" };
+        
+        public Pointer<IntPtr> Trackers { get; private set; }
 
         public Pointer<bool> ShowTitleScreen { get; private set; }
+        public StringPointer TransitionText { get; private set; }
         public Pointer<bool> TitleCanNavigate { get; private set; }
         public Pointer<int> TitleItemSelected { get; private set; }
         public Pointer<bool> TitleClicking { get; private set; }
-
-        public Pointer<IntPtr> Trackers { get; private set; }
 
         private UnityHelperTask unityTask;
         private ScanHelperTask scanTask;
@@ -124,9 +125,16 @@ namespace LiveSplit.DodgeballAcademia {
 
             Trackers = ptrFactory.Make<IntPtr>("GameStats", "current", unity.GetFieldOffset("FullStats", "trackers"));
 
-            var overworldDirector = ptrFactory.Make("Overworld.Director");
-            ShowTitleScreen = ptrFactory.Make<bool>(overworldDirector, "showTitleScreen");
-            var titleScreenList = ptrFactory.Make<IntPtr>(overworldDirector, "persistentOverworldDirector", "titleScreen", 0x28);
+            var overworldDirectorStatic = ptrFactory.Make("Overworld.Director", out IntPtr directorClass);
+
+            ShowTitleScreen = ptrFactory.Make<bool>(overworldDirectorStatic, "showTitleScreen");
+
+            var overworldDirector = ptrFactory.Make<IntPtr>(overworldDirectorStatic, "persistentOverworldDirector");
+
+            TransitionText = ptrFactory.MakeString(overworldDirector, unity.GetFieldOffset(directorClass, "transitionFade"), 0x38, 0x20, 0x10, ptrFactory.StringHeaderSize);
+            TransitionText.StringType = EStringType.UTF16Sized;
+            
+            var titleScreenList = ptrFactory.Make<IntPtr>(overworldDirector, unity.GetFieldOffset(directorClass, "titleScreen"), 0x28);
             var listClass = unity.FindClass("ListManager");
             TitleCanNavigate = ptrFactory.Make<bool>(titleScreenList, unity.GetFieldOffset(listClass, "canNavigate"));
             TitleItemSelected = ptrFactory.Make<int>(titleScreenList, unity.GetFieldOffset(listClass, "itemSelected"));
@@ -145,7 +153,7 @@ namespace LiveSplit.DodgeballAcademia {
             trackers.Clear();
         }
 
-        public IEnumerable<string> NewTrackerSequence() {
+        public IEnumerable<string> NewTrackerSequence(bool useSavedData = true) {
             if(ShowTitleScreen.New) {
                 yield break;
             }
@@ -155,16 +163,29 @@ namespace LiveSplit.DodgeballAcademia {
                 IntPtr entry = entries + 0x28 + 0x18 * id;
                 string key = game.ReadString(game.Read(entry, 0x0, 0x14), EStringType.UTF16Sized);
                 int value = game.Read<int>(game.Read(entry, 0x8, 0x10));
-                if(trackers.ContainsKey(key)) {
-                    if(trackers[key] != value) {
-                        trackers[key] = value;
+                if(useSavedData) {
+                    if(trackers.ContainsKey(key)) {
+                        if(trackers[key] != value) {
+                            trackers[key] = value;
+                            yield return key + "_" + value;
+                        }
+                    } else {
+                        trackers.Add(key, value);
                         yield return key + "_" + value;
                     }
                 } else {
-                    trackers.Add(key, value);
                     yield return key + "_" + value;
                 }
             }
+        }
+
+        public string GetEpisode() {
+            foreach(string name in NewTrackerSequence(false)) {
+                if(name.StartsWith("episode_")) {
+                    return name;
+                }
+            }
+            return String.Empty;
         }
 
         public bool IsLoading() {

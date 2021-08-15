@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE Splits [
   <!ENTITY T "Tracker_">
+  <!ENTITY TT "TransitionText_">
 ]>
 <Splits>
   <Empty name="Episodes" text=" - - Episodes - - "/>
-  <Split name="&T;episode_2" text="Episode 1 Done"/>
-  <Split name="&T;episode_3" text="Episode 2 Done"/>
-  <Split name="&T;episode_4" text="Episode 3 Done"/>
-  <Split name="&T;episode_5" text="Episode 4 Done"/>
-  <Split name="&T;episode_6" text="Episode 5 Done"/>
-  <Split name="&T;episode_7" text="Episode 6 Done"/>
-  <Split name="&T;episode_8" text="Episode 7 Done"/>
-  <Split name="&T;tCredits_1" text="Episode 8 Done"/>
+  <Split name="&TT;episode_1" text="Episode 1 Done"/>
+  <Split name="&TT;episode_2" text="Episode 2 Done"/>
+  <Split name="&TT;episode_3" text="Episode 3 Done"/>
+  <Split name="&TT;episode_4" text="Episode 4 Done"/>
+  <Split name="&TT;episode_5" text="Episode 5 Done"/>
+  <Split name="&TT;episode_6" text="Episode 6 Done"/>
+  <Split name="&TT;episode_7" text="Episode 7 Done"/>
+  <Split name="&TT;episode_8" text="Episode 8 Done"/>
 
   <Empty name="MainQuests" text=" - - Main Quests - - "/>
   <Parent name="epi1" text="Episode 1 - Let the Games Begin!">
