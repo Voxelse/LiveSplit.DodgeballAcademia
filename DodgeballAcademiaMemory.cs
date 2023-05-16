@@ -51,7 +51,7 @@ namespace LiveSplit.DodgeballAcademia {
                     scanTask = null;
                 }
 
-                if(allocAddr != default) {
+                if(allocAddr != default && ((!game?.Process?.HasExited) ?? false)) {
                     game.Process.Suspend();
                     game.Write(loadBytes, loadAddr);
                     game.Write(updateBytes, updateAddr);
